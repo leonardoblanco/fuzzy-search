@@ -1,2 +1,2 @@
 # fuzzy-search
-Fuzzy search with commons apache codec
+Fuzzy search with apache commons lang

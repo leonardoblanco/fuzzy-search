@@ -1,10 +1,13 @@
-package com.leonardoblanco.search.fuzzy.model;
+package com.leonardoblanco.search.fuzzy.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Index;
+import javax.persistence.Table;
 
 @Entity
+@Table(indexes=@Index(columnList="name"))
 public class Customer {
 
 	@Id
@@ -23,5 +26,5 @@ public class Customer {
 	}
 	public void setName(String name) {
 		this.name = name;
-	}	
+	}
 }
